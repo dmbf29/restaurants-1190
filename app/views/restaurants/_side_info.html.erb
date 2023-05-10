@@ -9,6 +9,7 @@
 <p class="fw-lighter opacity-75">
   <i class="fas fa-utensils"></i><span class='ms-2'><%= @restaurant.category %></span>
 </p>
+<p><%#= link_to @restaurant.chef_name, chef_restaurant_path(@restaurant)  %></p>
 <div class="d-flex">
   <%= link_to edit_restaurant_path(@restaurant), class: 'text-dark text-decoration-none' do %>
     <i class="fas fa-pencil-alt mx-1"></i>

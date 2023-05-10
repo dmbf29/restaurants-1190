@@ -1,4 +1,14 @@
 class RestaurantsController < ApplicationController
+
+  def top
+    @restaurants = Restaurant.where(rating: 1)
+  end
+
+  def chef
+    @restaurant = Restaurant.find(params[:id])
+    # @chef_name = @restaurant.chef_name
+  end
+
   def index
     @restaurants = Restaurant.all
   end
